@@ -160,7 +160,7 @@ header {
 
 .about h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-top: 3rem;
 }
 
@@ -243,4 +243,53 @@ header {
 
 .resumebtn .btn:hover i {
   transform: translateX(5px);
+}
+
+/* Skill section */
+
+.skills {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background: #DDF7F9;
+}
+
+.skills h1 {
+  font-size: 2.5rem;  
+  color: #fff;
+}
+
+.skills h1 span {
+  color: #FFB347;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  padding: 17px;
+  background-color: #C7F0F5;
+  border-radius: 11px;
+}
+
+.skill-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  background-color: #B6EAF2;
+  padding: 15px;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  transition: all 0.3s;
+}
+
+.skill-card:hover {
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.1);
+}
+
+.skill-card img {
+  width: 50px;
+}
+
+.skill-card p {
+  color: #22223B;
 }
