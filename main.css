@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7fdff;
@@ -90,6 +94,7 @@ header {
   font-size: 3rem;
   margin-bottom: 0.9rem;
   line-height: 1.25;
+  color: #0e2431;
 }
 
 .info-box h1 span {
@@ -105,18 +110,19 @@ header {
   color: #2f2f2f;
 }
 
-.info-box .about {
+.info-box .about-btn {
   display: inline-block;
   text-decoration: none;
   background-color: var(--primary);
   color: #fff;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
   font-weight: 700;
   padding: 0.75rem 1.2rem;
   border-radius: 20px;
   transition: all 0.2s ease;
 }
 
-.info-box .about:hover {
+.info-box .about-btn:hover {
   background-color: #27b1cc;
   transform: translateY(-1px);
 }
@@ -217,7 +223,7 @@ header {
   border-radius: 0.5em;
   transition: 0.3s;
   color: #fff;
-  background: #2506ad;
+  background: var(--primary);
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   font-family: "Nunito", sans-serif;
   text-decoration: none;
@@ -233,10 +239,6 @@ header {
   margin-left: 0.3rem;
   font-size: 1.2rem;
   transition: 0.3s;
-}
-
-.resumebtn .btn:hover {
-  background: #1a047e;
 }
 
 .resumebtn .btn:hover i {
